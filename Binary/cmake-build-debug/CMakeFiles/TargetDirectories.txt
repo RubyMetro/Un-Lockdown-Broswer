@@ -1,0 +1,3 @@
+/Users/luca/Documents/projects/Un-Lockdown-Broswer/Binary/cmake-build-debug/CMakeFiles/Binary.dir
+/Users/luca/Documents/projects/Un-Lockdown-Broswer/Binary/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/luca/Documents/projects/Un-Lockdown-Broswer/Binary/cmake-build-debug/CMakeFiles/rebuild_cache.dir
