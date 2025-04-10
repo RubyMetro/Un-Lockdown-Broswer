@@ -1,4 +1,4 @@
-echo off
+@echo off
 REM using "echo off" has the program run so that the commands being run do not show
 
 title Un-Lockdown-Browser
@@ -36,11 +36,14 @@ REM finish
 echo fucked ur shit UPPP dawg. restarting your machine now idgaf. kys
 
 shutdown /r /t 10
+goto :Eof
 
 :Not_Approved
 echo We're beating you with hammers
 echo No changes were made, closing cmd in 5 seconds
+goto :Eof
 
+:Eof
 REM Closes the window after 5 seconds "/nobreak" stops the user from using "ctrl+c" to cancel
 timeout /t 5 /nobreak
 
