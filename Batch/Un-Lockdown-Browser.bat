@@ -6,14 +6,13 @@ REM sets the title of the cmd window
 REM https://fixvx.com/popcrave/status/1909327101859189210?s=46
 
 :choice
-set /P c=Do you allow this program ability to edit your Windows Registry? [Y/N]
+set /P c=Do you allow this program ability to edit your Windows Registry? (YOUR PC WILL RESTART) [Y/N]
 if /I "%c%" EQU "Y" goto :Approved
 if /I "%c%" EQU "N" goto :Not_Approved
 if /I "%c%" EQU "y" goto :Approved
 if /I "%c%" EQU "n" goto :Not_Approved
 
 :Approved
-
 REM system keys
 REM re-enables task manager
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 0 /f
@@ -32,7 +31,9 @@ REM deletes the "NoDriveTypeAutoRun" setting
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /f
 
 REM finish
-echo Fix applied successfully, you may now close this window.
+echo Fix applied successfully, for the changes to take effect, restarting your machine is required. Your machine will restart in 10 seconds.
+
+shutdown /r /t 10
 
 :Not_Approved
 echo We're beating you with hammers
